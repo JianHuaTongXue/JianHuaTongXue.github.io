@@ -1,11 +1,11 @@
 # Basic
-title: Vno Jekyll
-subtitle: A blog-orientation theme for Jekyll
-welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
-description: Vno Jekyll is a port of my Ghost theme vno.
-creator: <a href="http://onev.cat">@onevcat</a>
+title: Alan's时光轴
+subtitle: 生活的智慧大概就在于遇事问个为什么。 —— 巴尔扎克
+welcome_message: <a href="https://github.com/JianHuaTongXue" target="_blank">欢迎光临</a>
+description: Hello，我是林建华，是个 Android/J2EE 开发者。
+creator: <a href="http://linjianhua.com">Alan</a>
 
-url: "http://vno.onevcat.com"
+url: "http://linjianhua.com"
 
 permalink: /:year/:month/:title/
 
@@ -16,16 +16,16 @@ redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", tables]
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: red
+cover_color: purple
 
 # The blog button should not be removed.
 blog_button:
-    title: Blog
+    title: 博客
     description: Visit blog
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+    - {title: 项目, description: My Projects, url: 'https://github.com/JianHuaTongXue'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
@@ -35,16 +35,16 @@ paginate_path: "page/:num/"
 
 # Comment
 comment:
-    disqus: vno-jekyll
+    disqus: Alan's时光轴
     # duoshuo: 
     
 # Social
 social:
     weibo: onevcat
-    github: onevcat
-    twitter: onevcat
-    gplus: 107108267983477358170
-    mail: onev@onevcat.com
+    github: JianHuaTongXue
+    twitter: JianHuaTongXue
+    gplus: JianHuaTongXue
+    mail: linjianhua.me@gmail.com
 
 # Google Analytics
 ga:

@@ -11,12 +11,14 @@ $(document).ready(function() {
     } else {
       $('.panel-cover').css('max-width',currentWidth);
       $('.panel-cover').animate({'max-width': '700px', 'width': '30%'}, 400, swing = 'swing', function() {} );
+	  $('.Vidage').css('display','none');
     }
   });
 
   if (window.location.hash && window.location.hash == "#blog") {
     $('.panel-cover').addClass('panel-cover--collapsed');
     $('.main-post-list').removeClass('hidden');
+	$('.Vidage').css('display','none');
   }
 
   if (window.location.pathname.substring(0, 5) == "/tag/") {

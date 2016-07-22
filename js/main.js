@@ -20,7 +20,12 @@ $(document).ready(function() {
     $('.main-post-list').removeClass('hidden');
 	$('.Vidage').css('display','none');
   }
-
+  
+  if ($('.panel-cover').hasClass('panel-cover--collapsed')){
+	  $('.Vidage').css('display','none');
+  }
+  
+  
   if (window.location.pathname.substring(0, 5) == "/tag/") {
     $('.panel-cover').addClass('panel-cover--collapsed');
   }

@@ -2,10 +2,10 @@
 title: Alan's时光轴
 subtitle: 生活的智慧大概就在于遇事问个为什么。 —— 巴尔扎克
 welcome_message: <a href="https://github.com/JianHuaTongXue" target="_blank">欢迎光临</a>
-description: Hello，我是林建华，是个 Android/J2EE 开发者。
-creator: <a href="http://linjianhua.me">Alan</a>
+description: Hello，我是Alan，是个 Android 开发者。
+creator: <a href="https://linjianhua.me">Alan</a>
 
-url: "http://linjianhua.com"
+url: "https://linjianhua.me"
 
 permalink: /:year/:month/:title/
 
@@ -35,8 +35,8 @@ paginate_path: "page/:num/"
 
 # Comment
 comment:
-    disqus: Alan's时光轴
-    # duoshuo: 
+    #disqus: Alan's时光轴
+    duoshuo: linjianhua 
     
 # Social
 social:

@@ -35,8 +35,8 @@ paginate_path: "page/:num/"
 
 # Comment
 comment:
-    #disqus: Alan's时光轴
-    duoshuo: linjianhua 
+    disqus: Alan's时光轴
+    #duoshuo: linjianhua 
     
 # Social
 social:

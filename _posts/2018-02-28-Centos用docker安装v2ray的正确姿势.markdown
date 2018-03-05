@@ -24,7 +24,7 @@ date: 2018-02-28 15:15:24.000000000 +09:00
 	
 ###4. 安装 docker-ce（社区版）
 
-	sudo yum install docker-ce
+	sudo yum -y install docker-ce
 	
 ###5. 启动 docker
 

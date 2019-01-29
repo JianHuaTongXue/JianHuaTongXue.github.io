@@ -4,10 +4,10 @@ title: 一个Class搞定提示框，懒人必备
 date: 2016-07-28 15:32:24.000000000 +09:00
 ---
 
-####前言
+#### 前言
 做新项目时，要用到以前的代码，有许多关联的资源文件要拷贝，但是又属于比较懒的那种人。就将布局文件用代码生成，省得拷贝。
 
-####具体代码
+#### 具体代码
 	package com.alan.dialogdemo;
 	
 	import android.annotation.SuppressLint;
@@ -219,7 +219,7 @@ date: 2016-07-28 15:32:24.000000000 +09:00
 	}
 
 
-####使用代码
+#### 使用代码
 	new CommonDialog.Builder(MainActivity.this)
 						.setTitle("支付未完成")
 						.setContent("你想要取消这次支付吗?")
@@ -238,8 +238,8 @@ date: 2016-07-28 15:32:24.000000000 +09:00
 						.create()
 						.show();
 
-####截图
+#### 截图
 ![jietu](http://ob0lp4zpm.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160728151146.png)
 
-####最后
+#### 最后
 根据自己项目的需求更改样式，自行扩展

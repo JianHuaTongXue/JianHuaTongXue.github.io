@@ -3,7 +3,7 @@ layout: post
 title: TypeScript学习笔记
 date: 2016-10-13 11:11:24.000000000 +09:00
 ---
-###一、基础类型
+### 一、基础类型
  布尔值：
 
 	let isDone:boolean = false;
@@ -29,7 +29,7 @@ date: 2016-10-13 11:11:24.000000000 +09:00
 	let name:string = "bob";
 	name = "smith";
 	
-###二、模板字符串：${ expr }
+### 二、模板字符串：${ expr }
 
 	
 	let name:string = "Gene";
@@ -37,7 +37,7 @@ date: 2016-10-13 11:11:24.000000000 +09:00
 	let sentence:string = "Hello,my name is ${ name }.I'll be ${ age + 1 } year old next month.";
 	let sentence:string = "Hello,my name is " + name + ".\n\n" + "I'll be " + (age + 1) + "years old next month.";
  
-###三、数组：
+### 三、数组：
 
   方式一：
 
@@ -47,7 +47,7 @@ date: 2016-10-13 11:11:24.000000000 +09:00
 
 	let list:Array<number> = [1,2,3];
 
-###四、元组 Tuple：
+### 四、元组 Tuple：
 
  定义元组：
 
@@ -59,7 +59,7 @@ date: 2016-10-13 11:11:24.000000000 +09:00
 
 	x = [10 , "hello"];
 
-###五、枚举：(默认从0开始为元素编号)
+### 五、枚举：(默认从0开始为元素编号)
 
 	enum Color {Red, Green, Blue};
 	let c: Color = Color.Green;
@@ -86,10 +86,10 @@ date: 2016-10-13 11:11:24.000000000 +09:00
 		alert("This is my warning message");
 	}
 
-###六、const 声明：(被赋值后不能被改变)
+### 六、const 声明：(被赋值后不能被改变)
 	const numLivesForCat = 9;
 	
-###七、解构数组：
+### 七、解构数组：
 
 	let input = [1,2];
 	let [first,second] = input;
@@ -114,13 +114,13 @@ date: 2016-10-13 11:11:24.000000000 +09:00
 	}
 	let [a,b] = o;
 
-###八、剩余变量...name的用法
+### 八、剩余变量...name的用法
 
 	let [first,...rest] = [1,2,3,4];
 	console.log(first); //输出 1
 	console.log(rest); //输出 [ 2, 3, 4 ]
 
-###九、接口：
+### 九、接口：
 
 	interface LabelledValue{
 		label:string;
@@ -163,7 +163,7 @@ date: 2016-10-13 11:11:24.000000000 +09:00
 	
 	let p1:Point = {x: 10,y: 20}; // 初始化后不能再赋值
 	
-###十、类：
+### 十、类：
 
 	class Greeter {
 		greeting: string;
@@ -177,7 +177,7 @@ date: 2016-10-13 11:11:24.000000000 +09:00
 	
 	let greeter = new Greeter("world");
 	
-###十一、继承：
+### 十一、继承：
 
 	class Animal{
 		name:string;
@@ -215,7 +215,7 @@ date: 2016-10-13 11:11:24.000000000 +09:00
 	sam.move();
 	tom.move(34);
 	
-###十二、访问修饰符：(默认为public)
+### 十二、访问修饰符：(默认为public)
 
  public公有的：
 	
@@ -265,7 +265,7 @@ date: 2016-10-13 11:11:24.000000000 +09:00
 	console.log(howard.getElevatorPitch);
 	console.log(howard.name); //不能访问，只能在派生类中使用 可以在getElevatorPitch()中使用
 
-###十三、readonly 修饰符：
+### 十三、readonly 修饰符：
 
 	class Octopus{
 		readonly name:string;
@@ -278,7 +278,7 @@ date: 2016-10-13 11:11:24.000000000 +09:00
 	let dad = new Octopus("Man with the 8 strong legs");
 	dad.name = "Man with the 3-piece suit";// 不能赋值，name属性是只读的，只能在声明是或构造函数里被初始化。
 	
-###十四、getters/setters方法：
+### 十四、getters/setters方法：
 
 	let passcode = "secret passcode";
 	
@@ -305,7 +305,7 @@ date: 2016-10-13 11:11:24.000000000 +09:00
 		alert(employee.fullName);
 	}
 	
-###十五、静态属性static，使用类名调用
+### 十五、静态属性static，使用类名调用
 
 	class Grid{
 		
@@ -320,7 +320,7 @@ date: 2016-10-13 11:11:24.000000000 +09:00
 		constructor(public scale:number){}
 	}
 
-###十六、泛型：
+### 十六、泛型：
 
 	function identity<T>(arg:T):T{
 		return arg;

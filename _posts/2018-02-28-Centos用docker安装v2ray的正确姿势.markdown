@@ -10,31 +10,31 @@ date: 2018-02-28 15:15:24.000000000 +09:00
 	
 一、安装docker
 
-1. 安装 yum-utils，它提供了 yum-config-manager，可用来管理yum源
+	1. 安装 yum-utils，它提供了 yum-config-manager，可用来管理yum源
 
-	sudo yum install -y yum-utils
-	
-2. 添加docker源
+		sudo yum install -y yum-utils
 
-	sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-	
-3. 更新索引
+	2. 添加docker源
 
-	sudo yum makecache fast
-	
-4. 安装 docker-ce（社区版）
+		sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
-	sudo yum -y install docker-ce
-	
-5. 启动 docker
+	3. 更新索引
 
-	sudo systemctl start docker
-	
-6. 验证是否安装成功
+		sudo yum makecache fast
 
-	sudo docker info 
-	或者
-	sudo docker --version
+	4. 安装 docker-ce（社区版）
+
+		sudo yum -y install docker-ce
+
+	5. 启动 docker
+
+		sudo systemctl start docker
+
+	6. 验证是否安装成功
+
+		sudo docker info 
+		或者
+		sudo docker --version
 	
 二、安装v2ray docker容器
 

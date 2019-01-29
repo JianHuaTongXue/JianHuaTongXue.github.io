@@ -8,47 +8,47 @@ date: 2018-02-28 15:15:24.000000000 +09:00
 
 	首先你需要买个vps，并且安装centos的系统。
 	
-一、安装docker
+## 一、安装docker
 
 
-1. 安装 yum-utils，它提供了 yum-config-manager，可用来管理yum源
+### 1. 安装 yum-utils，它提供了 yum-config-manager，可用来管理yum源
 
 	sudo yum install -y yum-utils
 	
 
-2. 添加docker源
+### 2. 添加docker源
 
 	sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 	
 
-3. 更新索引
+### 3. 更新索引
 
 	sudo yum makecache fast
 	
 
-4. 安装 docker-ce（社区版）
+### 4. 安装 docker-ce（社区版）
 
 	sudo yum -y install docker-ce
 	
 
-5. 启动 docker
+### 5. 启动 docker
 
 	sudo systemctl start docker
 	
 
-6. 验证是否安装成功
+### 6. 验证是否安装成功
 
 	sudo docker info 
 	或者
 	sudo docker --version
 	
-二、安装v2ray docker容器
+## 二、安装v2ray docker容器
 
-1. 拉取v2ray docker镜像
+### 1. 拉取v2ray docker镜像
 
 	sudo docker pull v2ray/official
 	
-2. 在 /etc 目录下新建一个文件夹 v2ray, 并把你的配置写好后命名为 config.json 放入 v2ray 文件夹内**（ 这一步至关重要 ）**
+### 2. 在 /etc 目录下新建一个文件夹 v2ray, 并把你的配置写好后命名为 config.json 放入 v2ray 文件夹内**（ 这一步至关重要 ）**
 
 	
 > /etc/v2ray/config.json  ，如下：
@@ -155,7 +155,7 @@ date: 2018-02-28 15:15:24.000000000 +09:00
 		}
 	}
 	
-3. 部署v2ray docker容器
+### 3. 部署v2ray docker容器
 
 > 将vps的 /etc/v2ray 文件夹映射到 v2ray docker 容器的 /etc/v2ray 文件夹下
 
